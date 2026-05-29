@@ -18,4 +18,8 @@ public class ProdutoController {
     public void excluirProduto(int id) {
         produtoDAO.excluir(id);
     }
+
+    public List<Produto> buscarPorNome(String nome) {
+        return produtoDAO.buscarPorNome(nome);
+    }
 }
