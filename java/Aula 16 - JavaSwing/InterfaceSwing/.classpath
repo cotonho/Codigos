@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe Carneiro/Desktop/Unipac/DISCIPLINAS ATIVAS/Programação Orientada a Objetos 2026-01/Material OO/Material Felipe POO/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
