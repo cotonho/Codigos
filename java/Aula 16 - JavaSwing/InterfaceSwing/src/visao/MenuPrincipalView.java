@@ -30,13 +30,13 @@ public class MenuPrincipalView extends JFrame {
 
         painelBotoes.add(lblSubtitulo);
 
-        JButton btnConsultarEstoque = new JButton("📦  Consultar Estoque");
+        JButton btnConsultarEstoque = new JButton("Consultar Estoque");
         btnConsultarEstoque.setFont(new Font("Arial", Font.PLAIN, 14));
         btnConsultarEstoque.addActionListener(e -> {
             new ProdutoView().setVisible(true);
         });
 
-        JButton btnNovoProduto = new JButton("➕  Novo Produto");
+        JButton btnNovoProduto = new JButton("Novo Produto");
         btnNovoProduto.setFont(new Font("Arial", Font.PLAIN, 14));
         btnNovoProduto.addActionListener(e -> {
             new CadastrarProdutoView().setVisible(true);

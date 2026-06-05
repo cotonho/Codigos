@@ -4,18 +4,21 @@ import javax.swing.*;
 import controle.ProdutoController;
 import modelo.Produto;
 import java.awt.*;
+import modelo.PlaceholderTextField;
 
 public class CadastrarProdutoView extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
-    private JTextField txtId;
-    private JTextField txtNome;
-    private JTextField txtQuantidade;
-    private JTextField txtValorUnitario;
+    // ALTERADO: Mudança do tipo de JTextField para PlaceholderTextField
+    private PlaceholderTextField txtId;
+    private PlaceholderTextField txtNome;
+    private PlaceholderTextField txtQuantidade;
+    private PlaceholderTextField txtValorUnitario;
+    
     private JButton btnSalvar;
     private ProdutoController produtoController = new ProdutoController();
-
+    
     // Construtor padrão — modo cadastro
     public CadastrarProdutoView() {
         initComponents();
@@ -41,7 +44,7 @@ public class CadastrarProdutoView extends JFrame {
 
         // No modo edição, o ID não pode ser alterado
         txtId.setEnabled(false);
-
+        
         // Troca o texto do botão
         btnSalvar.setText("Salvar Alterações");
 
@@ -50,12 +53,12 @@ public class CadastrarProdutoView extends JFrame {
     }
 
     private void initComponents() {
-        txtId = new JTextField(10);
-        txtNome = new JTextField(20);
-        txtQuantidade = new JTextField(10);
-        txtValorUnitario = new JTextField(10);
+        txtId = new PlaceholderTextField(10, "Ex: 102 ou 0 para automatico");
+        txtNome = new PlaceholderTextField(20, "Ex: Caneta");
+        txtQuantidade = new PlaceholderTextField(10, "Ex: 50");
+        txtValorUnitario = new PlaceholderTextField(10, "Ex: 2.50");
+        
         btnSalvar = new JButton("Cadastrar");
-
         btnSalvar.addActionListener(e -> salvarProduto());
     }
 

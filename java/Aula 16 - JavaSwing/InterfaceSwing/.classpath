@@ -6,6 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:\Codigos\POO\Aula 16 - JavaSwing\InterfaceSwing\lib\mysql-connector-j-9.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Felipe Carneiro/Desktop/Unipac/DISCIPLINAS ATIVAS/Programação Orientada a Objetos 2026-01/Material OO/Material Felipe POO/mysql-connector-java-5.1.6-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

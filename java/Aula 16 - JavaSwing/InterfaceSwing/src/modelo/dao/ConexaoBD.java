@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConexaoBD {	
     private static final String URL = "jdbc:mysql://localhost:3306/papelaria";
     private static final String USER = "root";
-    private static final String PASS = "rokbende0";
+    private static final String PASS = "";
 
     public static Connection getConnection() throws SQLException {
         try {
